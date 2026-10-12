@@ -1,0 +1,162 @@
+{
+  "inspection-records": [
+    {
+      "id": 1,
+      "machineryCode": "EQ-101",
+      "modelId": 1,
+      "pitSectionId": 10,
+      "inspectorName": "Carlos Mendoza",
+      "status": "MAINTENANCE_REQUIRED",
+      "maxOperatingHours": 5000,
+      "operatingHours": 1250,
+      "notes": "Alerta de sobrecalentamiento detectada por sensores IoT en tajo abierto.",
+      "inspectedAt": "2026-10-10"
+    },
+    {
+      "id": 2,
+      "machineryCode": "EQ-102",
+      "modelId": 2,
+      "pitSectionId": 10,
+      "inspectorName": "Ana Torres",
+      "status": "OPERATIONAL",
+      "maxOperatingHours": 2500,
+      "operatingHours": 820,
+      "notes": "Mantenimiento preventivo de rutina en sistema hidráulico.",
+      "inspectedAt": "2026-10-11"
+    },
+    {
+      "id": 3,
+      "machineryCode": "EQ-201",
+      "modelId": 4,
+      "pitSectionId": 20,
+      "inspectorName": "Roberto Gómez",
+      "status": "MAINTENANCE_REQUIRED",
+      "maxOperatingHours": 3500,
+      "operatingHours": 2100,
+      "notes": "Vibración excesiva en la columna de perforación subterránea.",
+      "inspectedAt": "2026-10-11"
+    },
+    {
+      "id": 4,
+      "machineryCode": "EQ-202",
+      "modelId": 5,
+      "pitSectionId": 20,
+      "inspectorName": "Luis Paredes",
+      "status": "OPERATIONAL",
+      "maxOperatingHours": 1500,
+      "operatingHours": 450,
+      "notes": "Inspección visual básica previa a ingreso a galería.",
+      "inspectedAt": "2026-10-12"
+    },
+    {
+      "id": 5,
+      "machineryCode": "EQ-301",
+      "modelId": 7,
+      "pitSectionId": 30,
+      "inspectorName": "Mariana Ríos",
+      "status": "INACTIVE",
+      "maxOperatingHours": 3000,
+      "operatingHours": 3100,
+      "notes": "Unidad fuera de servicio por falta de repuestos de oruga.",
+      "inspectedAt": "2026-10-12"
+    }
+  ],
+  "telemetry-readings": [
+    {
+      "id": 101,
+      "inspectionRecordId": 1,
+      "machineryCode": "EQ-101",
+      "modelId": 1,
+      "pitSectionId": 10,
+      "operatingHours": 450,
+      "engineTemperatureC": 92.4,
+      "oilPressurePsi": 55.1,
+      "alertTriggered": false,
+      "registeredAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "id": 102,
+      "inspectionRecordId": 1,
+      "machineryCode": "EQ-101",
+      "modelId": 1,
+      "pitSectionId": 10,
+      "operatingHours": 520,
+      "engineTemperatureC": 102.8,
+      "oilPressurePsi": 42.0,
+      "alertTriggered": true,
+      "registeredAt": "2026-10-10T08:15:00Z"
+    },
+    {
+      "id": 103,
+      "inspectionRecordId": 1,
+      "machineryCode": "EQ-101",
+      "modelId": 1,
+      "pitSectionId": 10,
+      "operatingHours": 280,
+      "engineTemperatureC": 108.5,
+      "oilPressurePsi": 35.2,
+      "alertTriggered": true,
+      "registeredAt": "2026-10-10T08:30:00Z"
+    },
+    {
+      "id": 104,
+      "inspectionRecordId": 2,
+      "machineryCode": "EQ-102",
+      "modelId": 2,
+      "pitSectionId": 10,
+      "operatingHours": 410,
+      "engineTemperatureC": 88.0,
+      "oilPressurePsi": 60.2,
+      "alertTriggered": false,
+      "registeredAt": "2026-10-11T09:00:00Z"
+    },
+    {
+      "id": 105,
+      "inspectionRecordId": 2,
+      "machineryCode": "EQ-102",
+      "modelId": 2,
+      "pitSectionId": 10,
+      "operatingHours": 410,
+      "engineTemperatureC": 89.5,
+      "oilPressurePsi": 59.8,
+      "alertTriggered": false,
+      "registeredAt": "2026-10-11T09:30:00Z"
+    },
+    {
+      "id": 106,
+      "inspectionRecordId": 3,
+      "machineryCode": "EQ-201",
+      "modelId": 4,
+      "pitSectionId": 20,
+      "operatingHours": 700,
+      "engineTemperatureC": 95.1,
+      "oilPressurePsi": 50.4,
+      "alertTriggered": true,
+      "registeredAt": "2026-10-11T14:00:00Z"
+    },
+    {
+      "id": 107,
+      "inspectionRecordId": 3,
+      "machineryCode": "EQ-201",
+      "modelId": 4,
+      "pitSectionId": 20,
+      "operatingHours": 700,
+      "engineTemperatureC": 97.3,
+      "oilPressurePsi": 48.1,
+      "alertTriggered": true,
+      "registeredAt": "2026-10-11T14:15:00Z"
+    },
+    {
+      "id": 108,
+      "inspectionRecordId": 3,
+      "machineryCode": "EQ-201",
+      "modelId": 4,
+      "pitSectionId": 20,
+      "operatingHours": 700,
+      "engineTemperatureC": 99.0,
+      "oilPressurePsi": 45.3,
+      "alertTriggered": true,
+      "registeredAt": "2026-10-11T14:30:00Z"
+    }
+  ]
+}
