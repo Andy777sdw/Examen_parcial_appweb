@@ -9,6 +9,19 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "json-server": "^1.0.0-beta.15",
     "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.5.4",
+    "axios": "^1.20.0",
+    "pinia": "^4.0.3",
+    "primeflex": "^4.0.0",
+    "primeicons": "^8.0.2",
+    "primevue": "^4.5.5",
+    "vue": "^3.5.43",
+    "vue-i18n": "^11.4.14",
+    "vue-router": "^5.4.0"
   }
 }
