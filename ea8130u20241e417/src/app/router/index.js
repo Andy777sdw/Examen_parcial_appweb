@@ -5,9 +5,6 @@
  * @author Andy Alfredo Hipolito Salcedo Muñoz
  */
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@/inspections/presentation/views/home.view.vue';
-import NewTelemetryView from '@/inspections/presentation/views/new-telemetry.view.vue';
-import PageNotFoundView from '@/shared/presentation/views/page-not-found.view.vue';
 
 const routes = [
   {
@@ -17,19 +14,19 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: HomeView,
+    component: () => import('@/inspections/presentation/views/home.view.vue'),
     meta: { title: 'Home' }
   },
   {
     path: '/telemetry/items/new',
     name: 'new-telemetry',
-    component: NewTelemetryView,
+    component: () => import('@/inspections/presentation/views/new-telemetry.view.vue'),
     meta: { title: 'New Telemetry' }
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
-    component: PageNotFoundView,
+    component: () => import('@/shared/presentation/views/page-not-found.view.vue'),
     meta: { title: 'Page Not Found' }
   }
 ];
